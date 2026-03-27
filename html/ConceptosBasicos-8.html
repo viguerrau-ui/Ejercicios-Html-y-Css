@@ -9,15 +9,16 @@
 
 <body>
     <h1>FORMULARIO DE REGISTRO</h1>
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="alert('hola valeria')" >
         <p>
-            Nombre: <input type="text" />
+            Nombre: <input type="text" name="nombre" maxlength="5ss" autocomplete="off" value="lynn" />
         </p>
         <p>
-            Apellido: <input type="text" />
+            Apellido: <input type="text" placeholder="ingresa tu Apellido" required/>
         </p>
         <p>
-            Sexo: <input type="radio" /> hombre <input type="radio" /> mujer
+            Sexo: <input type="radio" value="h" name="sexo"/> hombre 
+            <input type="radio" value="m" name="sexo"/> mujer
         </p>
         <P>
             Correo: <input type="text" />
@@ -36,3 +37,4 @@
 </body>
 
 </html>
+
