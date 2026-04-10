@@ -1,0 +1,53 @@
+* {
+    /* font-style: italic; */
+}
+
+:root {
+    --color-principal: green;
+    --color-secundario: blue;
+    --font-type-italic: italic;
+    --size-letter: 60px;
+}
+
+/* .container  selector class */
+body div.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px 5px;
+    background-color: gray;
+    opacity: 0.6;
+    font-style: var(--font-type-italic);
+    background-repeat: no-repeat;
+    /* background-attachment: initial; */
+    background-position: left;
+    border: 5px solid black;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px 5px var(--color-secundario);
+    font-size: 20px;
+    text-decoration: underline;
+    background-image: url(gato.jpg);
+}
+
+body div.container:hover {
+    background-color: var(--color-principal);
+    cursor: pointer;
+}
+
+#title {
+    border: 5px solid white !important;
+    font-size: var(--size-letter);
+}
+
+@media (min-width:600px) {
+    .container {
+        background-color: skyblue;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        flex-direction: column;
+        background-color: black;
+    }
+}

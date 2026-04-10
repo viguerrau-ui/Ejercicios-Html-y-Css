@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="" method="post">
+        <p>Nombre: <input type="text" maxlength="10ss" required> </p>
+        <p> Apellidos: <input type="text" maxlength="15ss" required> </p>
+        <p> Sexo: <input type="radio" required value="h" name="Sexo" /> hombre
+            <input type="radio" value="m" name="Sexo" /> mujer
+        </p>
+        <p> Correo: <input type="text" maxlength="15ss" required></p>
+        <p>
+            <label for="poblacion">
+                <Picture></Picture>Poblacion
+            </label>
+            <select name="poblacion" id="poblacion">
+                <option value="0">seleccionar</option>
+                <option value="1">ethan</option>
+                <option value="2">lynn</option>
+                <option value="3">mama mayi</option>
+            </select>
+        </p>
+        <p> <label for="descripcion" maxlength="100ss" placeholder="ingrese su descripcion"> Descripcion </label>
+            <textarea name= "descripcion" id="descripcion" rows="6" cols="60" required></textarea>
+        </p>
+        <p> <input type="checkbox" required> Deseo recibir información sobre novedades y ofertas</p>
+        <p> <input type="checkbox" required> Declaro haber leido y aceptar las condiciones generales del programa y la normativa
+            sobre proteccion de datos</p>
+        <input type="submit">
+</body>
+
+</html>
